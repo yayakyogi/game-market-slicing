@@ -23,7 +23,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-between py-3 px-8 backdrop-blur-2xl bg-[radial-gradient(27.22%_77.17%_at_48.72%_50%,#363B9F_0%,#1F2937_100%)]">
+    <div className="sticky top-0 z-20 flex items-center justify-between py-3 px-8 backdrop-blur-2xl bg-[radial-gradient(27.22%_77.17%_at_48.72%_50%,#363B9F_0%,#1F2937_100%)]">
       <div className="w-96">
         <Image src="/logo.png" alt="logo" width={55} height={40} />
       </div>
