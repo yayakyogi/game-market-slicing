@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export interface MarketCardProps {
-  gameIcon: string;
+  gameAvatar: string;
   gameName: string;
   listingsCount: number;
   rating: number;
@@ -9,7 +9,7 @@ export interface MarketCardProps {
 }
 
 export default function MarketCard({
-  gameIcon,
+  gameAvatar,
   gameName,
   listingsCount,
   rating,
@@ -20,7 +20,7 @@ export default function MarketCard({
       <div className="flex items-start gap-3">
         <div className="relative shrink-0">
           <Image
-            src={gameIcon}
+            src={gameAvatar}
             alt={gameName}
             width={48}
             height={48}

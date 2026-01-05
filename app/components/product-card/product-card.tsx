@@ -67,7 +67,7 @@ export default function ProductCard({
 
             <h3 className="text-white text-xs font-semibold">{sellerName}</h3>
 
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-2">
               <Image
                 src="/icons/ic-star.png"
                 alt="star"
