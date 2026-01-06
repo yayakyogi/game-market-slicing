@@ -34,7 +34,7 @@ export default function ProductCard({
   price,
 }: ProductCardProps) {
   return (
-    <div className="rounded-lg min-w-[600px] h-full p-5 border border-[#374151] space-y-3 bg-linear-to-br from-[#1F2937] from-60% to-[#484EC9]/50">
+    <div className="relative rounded-lg min-w-[600px] h-full p-5 border border-[#374151] space-y-3 bg-linear-to-br from-[#1F2937] from-60% to-[#484EC9]/50 hover:from-0% transition-all duration-300 hover:to-[#484EC9]/90 cursor-pointer hover:border-[#484EC9]">
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Image src={gameIcon} alt={gameName} width={20} height={20} />
@@ -130,6 +130,14 @@ export default function ProductCard({
           </div>
         </div>
       </div>
+
+      <Image
+        src="/icons/ic-logo.png"
+        alt="logo"
+        width={250}
+        height={250}
+        className="absolute bottom-0 right-0 hover:right-20 transition-all duration-500"
+      />
     </div>
   );
 }

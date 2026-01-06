@@ -16,7 +16,7 @@ export default function MarketCard({
   reviewCount,
 }: MarketCardProps) {
   return (
-    <div className="rounded-lg bg-background p-4 border border-slate-600 hover:border-slate-500 transition-colors cursor-pointer">
+    <div className="rounded-lg bg-background p-4 transition-all duration-300 cursor-pointer hover:bg-linear-to-r from-[#1F2937] to-[#484EC9]/50 hover:outline-2 hover:outline-[#484EC9]">
       <div className="flex items-start gap-3">
         <div className="relative shrink-0">
           <Image
@@ -42,8 +42,8 @@ export default function MarketCard({
                 key={i}
                 src="/icons/ic-star.png"
                 alt="star"
-                width={16}
-                height={16}
+                width={20}
+                height={20}
                 className="opacity-100"
               />
             ))}

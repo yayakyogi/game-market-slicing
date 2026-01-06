@@ -78,7 +78,7 @@ export default function ContentSection({
     <div className="bg-[url(/background-image.png)] bg-cover bg-center bg-no-repeat">
       <div className="bg-linear-to-b from-background/85 via-background/95 to-background">
         {/* Content */}
-        <div className="max-w-7xl mx-auto py-7 flex items-start gap-5">
+        <div className="max-w-5xl mx-auto py-7 flex items-start gap-5">
           {/* About */}
           <div className="rounded-lg bg-card w-1/4 sticky top-24 p-5 border border-slate-700">
             {/* Profile */}
