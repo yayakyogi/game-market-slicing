@@ -34,7 +34,7 @@ export default function ProductCard({
   price,
 }: ProductCardProps) {
   return (
-    <div className="relative rounded-lg min-w-[600px] h-full p-5 border border-[#374151] space-y-3 bg-linear-to-br from-[#1F2937] from-60% to-[#484EC9]/50 hover:from-0% transition-all duration-300 hover:to-[#484EC9]/90 cursor-pointer hover:border-[#484EC9]">
+    <div className="relative rounded-lg min-w-[550px] h-full px-5 pt-3 border border-[#374151] space-y-3 bg-linear-to-br from-[#1F2937] from-60% to-[#484EC9]/50 hover:from-0% transition-all duration-300 hover:to-[#484EC9]/90 cursor-pointer hover:border-[#484EC9]">
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Image src={gameIcon} alt={gameName} width={20} height={20} />
@@ -43,14 +43,14 @@ export default function ProductCard({
         <span className="text-white opacity-80 text-xs">{timeAgo}</span>
       </div>
 
-      <div className="flex items-start gap-5">
+      <div className="flex items-start gap-2">
         {/* Product Image */}
-        <div className="relative w-[250px] h-[218px] overflow-hidden rounded-lg shrink-0">
+        <div className="relative w-[210px] h-[205px] overflow-hidden rounded-lg shrink-0">
           <Image
             src={productImage}
             alt={productName}
-            width={250}
-            height={250}
+            width={150}
+            height={150}
             className="w-full h-full object-cover"
           />
           <div className="z-10 absolute bottom-0 w-full flex items-center justify-center p-2 gap-2">
@@ -87,7 +87,7 @@ export default function ProductCard({
         </div>
 
         {/* Product Description */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           {/* Product Name */}
           <h1 className="text-white font-semibold  text-sm line-clamp-3 mb-0">
             {productName}
