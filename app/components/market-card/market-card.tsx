@@ -22,8 +22,8 @@ export default function MarketCard({
           <Image
             src={gameAvatar}
             alt={gameName}
-            width={48}
-            height={48}
+            width={44}
+            height={44}
             className="rounded-full"
           />
         </div>
@@ -35,20 +35,20 @@ export default function MarketCard({
             {listingsCount} listings
           </p>
         </div>
-        <div>
-          <div className="flex items-center gap-1">
+        <div className="flex flex-col items-end space-y-2">
+          <div className="flex items-center">
             {Array.from({ length: 5 }).map((_, i) => (
               <Image
                 key={i}
                 src="/icons/ic-star.png"
                 alt="star"
-                width={12}
-                height={12}
+                width={16}
+                height={16}
                 className="opacity-100"
               />
             ))}
           </div>
-          <span className="text-xs text-muted-foreground ml-1">
+          <span className="text-xs text-muted-foreground">
             ({reviewCount} reviews)
           </span>
         </div>

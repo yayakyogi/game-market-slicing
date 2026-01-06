@@ -87,8 +87,8 @@ export default function ContentSection({
                 <Image
                   src="/photo-profile.png"
                   alt="photo-profile"
-                  width={100}
-                  height={100}
+                  width={98}
+                  height={98}
                 />
                 <div className="w-5 h-5 rounded-full bg-green-500 absolute bottom-2 right-0" />
               </div>
@@ -99,10 +99,10 @@ export default function ContentSection({
                 <Image
                   src="/icons/ic-star.png"
                   alt="star"
-                  width={20}
-                  height={20}
+                  width={16}
+                  height={16}
                 />
-                <span className="text-lg font-semibold text-warning">4.9</span>
+                <span className="text-sm font-semibold text-warning">4.9</span>
                 <span className="text-sm text-muted-foreground">
                   (200 reviews)
                 </span>
@@ -122,23 +122,23 @@ export default function ContentSection({
 
             {/* About */}
             <div className="mt-5 space-y-2">
-              <h2 className="text-lg font-medium text-white">About</h2>
-              <p className="text-white text-xs">
+              <h2 className="text-xl font-medium text-white">About</h2>
+              <p className="text-white text-sm">
                 ⚡️ BestSpeed – Fast & Trusted Game Boosting Services
               </p>
-              <p className="text-white text-xs">🟢 Available 24/7</p>
-              <p className="text-white text-xs">
+              <p className="text-white text-sm">🟢 Available 24/7</p>
+              <p className="text-white text-sm">
                 🚀 Delivery Time: Usually within 1–15 minutes after your order
                 is received (mostly instant!)
               </p>
-              <p className="text-white text-xs">
+              <p className="text-white text-sm">
                 Got any questions about our services? Need a custom order,
                 special request, or something else?
               </p>
-              <p className="text-white text-xs">
+              <p className="text-white text-sm">
                 💬 Just message us — we&apos;re always ready to help.
               </p>
-              <p className="text-white text-xs">
+              <p className="text-white text-sm">
                 BestSpeed is trusted by thousands of gamers worldwide for speed,
                 reliability, and excellent customer service. Let us handle the
                 grind while you enjoy the game.
@@ -148,7 +148,7 @@ export default function ContentSection({
             {/* Badges */}
             <div className="mt-5">
               <div className="flex items-center justify-between">
-                <h2 className="text-lg font-medium text-white">Badges</h2>
+                <h2 className="text-xl font-medium text-white">Badges</h2>
                 <Button variant="link" className="text-xs">
                   See All Badges
                 </Button>
@@ -158,20 +158,20 @@ export default function ContentSection({
                 <Image
                   src="/icons/badge-1.png"
                   alt="badge-1"
-                  width={50}
-                  height={50}
+                  width={62}
+                  height={62}
                 />
                 <Image
                   src="/icons/badge-2.png"
                   alt="badge-2"
-                  width={50}
-                  height={50}
+                  width={62}
+                  height={62}
                 />
                 <Image
                   src="/icons/badge-3.png"
                   alt="badge-3"
-                  width={50}
-                  height={50}
+                  width={62}
+                  height={62}
                 />
               </div>
             </div>
@@ -253,21 +253,21 @@ export default function ContentSection({
                 <div className="space-y-4 bg-card p-5 rounded-lg border border-slate-700">
                   {/* Header with title and search */}
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl font-medium text-white">
+                    <h1 className="text-xl font-medium text-white">
                       BestSpeed markets
                     </h1>
                     <div className="relative">
-                      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
                       <input
                         type="text"
                         placeholder="Search markets..."
-                        className="w-[300px] pl-10 pr-4 py-1.5 border border-slate-600 bg-background rounded-md text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
+                        className="w-[300px] pl-4 pr-10 py-1.5 border border-slate-600 bg-background rounded-md text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
                       />
+                      <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
                     </div>
                   </div>
 
                   {/* Markets Grid */}
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-3">
                     {markets
                       .slice(
                         (currentPage - 1) * itemsPerPage,

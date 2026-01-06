@@ -34,23 +34,23 @@ export default function ProductCard({
   price,
 }: ProductCardProps) {
   return (
-    <div className="rounded-lg min-w-[750px] p-5 border border-slate-600 space-y-3 bg-[linear-gradient(0deg,#1F2937,#1F2937),linear-gradient(108.93deg,rgba(31,41,55,0)_46.97%,rgba(72,78,201,0.3)_100%)]">
+    <div className="rounded-lg min-w-[600px] h-full p-5 border border-[#374151] space-y-3 bg-linear-to-br from-[#1F2937] from-60% to-[#484EC9]/50">
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Image src={gameIcon} alt={gameName} width={20} height={20} />
-          <h2 className="font-medium text-white text-lg">{gameName}</h2>
+          <h2 className="font-semibold text-white text-xs">{gameName}</h2>
         </div>
-        <span className="text-white text-sm">{timeAgo}</span>
+        <span className="text-white opacity-80 text-xs">{timeAgo}</span>
       </div>
 
       <div className="flex items-start gap-5">
         {/* Product Image */}
-        <div className="relative w-[280px] h-[280px] overflow-hidden rounded shrink-0">
+        <div className="relative w-[250px] h-[218px] overflow-hidden rounded-lg shrink-0">
           <Image
             src={productImage}
             alt={productName}
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             className="w-full h-full object-cover"
           />
           <div className="z-10 absolute bottom-0 w-full flex items-center justify-center p-2 gap-2">
@@ -89,10 +89,10 @@ export default function ProductCard({
         {/* Product Description */}
         <div className="space-y-3">
           {/* Product Name */}
-          <h1 className="text-white font-semibold line-clamp-3">
+          <h1 className="text-white font-semibold  text-sm line-clamp-3 mb-0">
             {productName}
           </h1>
-          <Button variant="link" className="text-white p-0 text-xs">
+          <Button variant="link" className="text-white p-0 text-[10px]">
             Show Description
           </Button>
 
@@ -101,28 +101,30 @@ export default function ProductCard({
           {/* Type */}
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-muted-foreground text-xs">Type</p>
+              <p className="text-muted-foreground text-[8px]">Type</p>
               <div className="flex items-center gap-2">
-                <span className="text-white">...</span>
-                <ChevronRight className="text-white" size={15} />
-                <p className="text-white text-sm">{productType}</p>
+                <span className="text-white text-[10px]">...</span>
+                <ChevronRight className="text-white" size={10} />
+                <p className="text-white text-[10px]">{productType}</p>
               </div>
             </div>
 
             <div>
-              <p className="text-muted-foreground text-xs">Delivery Method</p>
-              <p className="text-white text-sm">{deliveryMethod}</p>
+              <p className="text-muted-foreground text-[8px]">
+                Delivery Method
+              </p>
+              <p className="text-white text-[10px]">{deliveryMethod}</p>
             </div>
 
             <div>
-              <p className="text-muted-foreground text-xs">Server</p>
-              <p className="text-white text-sm">{server}</p>
+              <p className="text-muted-foreground text-[8px]">Server</p>
+              <p className="text-white text-[10px]">{server}</p>
             </div>
           </div>
 
           {/* Product Price */}
-          <div className="rounded-lg bg-primary p-5">
-            <p className="text-2xl font-bold text-yellow-400">
+          <div className="rounded-lg bg-background px-4 py-3.5">
+            <p className="text-xl font-bold text-yellow-300">
               $ {price.toFixed(2)}
             </p>
           </div>
